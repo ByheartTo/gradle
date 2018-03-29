@@ -249,7 +249,7 @@ public abstract class AbstractNativeCompileTask extends DefaultTask {
     /**
      * Returns the system include directories to be used for compilation.
      *
-     * @since 4.8
+     * @since 4.7
      */
     @Internal("The paths for include directories are tracked via the includePaths property, the contents are tracked via discovered inputs")
     public ConfigurableFileCollection getSystemIncludes() {
@@ -259,7 +259,7 @@ public abstract class AbstractNativeCompileTask extends DefaultTask {
     /**
      * Add system include directories where the compiler should search for header files.
      *
-     * @since 4.8
+     * @since 4.7
      */
     public void systemIncludes(Object systemIncludeRoots) {
         systemIncludes.from(systemIncludeRoots);
